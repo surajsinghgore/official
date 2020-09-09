@@ -23,7 +23,7 @@ var i=0;
 function sliders(){
   
   a.src=images[i];
-
+  document.getElementById('caption').innerHTML=diss[i];
 
   if(i<images.length-1){
  
@@ -40,18 +40,7 @@ i++;
 setInterval(sliders,4000);
 
 //discription changer
-function dis(){
-document.getElementById('caption').innerHTML=diss[i];
-if(i<diss.length-1){
- 
-i++;
 
-  }
-  else{
-
-    i=0;
-  }
-}
   setInterval(dis,4200);
 
 //set tan controller
